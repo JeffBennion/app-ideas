@@ -19,6 +19,9 @@
 		1F94D2AD193563CD000219C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94D295193563CD000219C9 /* UIKit.framework */; };
 		1F94D2B5193563CD000219C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F94D2B3193563CD000219C9 /* InfoPlist.strings */; };
 		1F94D2B7193563CD000219C9 /* app_ideasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D2B6193563CD000219C9 /* app_ideasTests.m */; };
+		1F94D2C2193563FA000219C9 /* AIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D2C1193563FA000219C9 /* AIListViewController.m */; };
+		1F94D2C5193567CB000219C9 /* AIListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D2C4193567CB000219C9 /* AIListTableViewDataSource.m */; };
+		1F94D2C819357C98000219C9 /* AIListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D2C719357C98000219C9 /* AIListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		1F94D2B2193563CD000219C9 /* app-ideasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app-ideasTests-Info.plist"; sourceTree = "<group>"; };
 		1F94D2B4193563CD000219C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F94D2B6193563CD000219C9 /* app_ideasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = app_ideasTests.m; sourceTree = "<group>"; };
+		1F94D2C0193563FA000219C9 /* AIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListViewController.h; sourceTree = "<group>"; };
+		1F94D2C1193563FA000219C9 /* AIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIListViewController.m; sourceTree = "<group>"; };
+		1F94D2C3193567CB000219C9 /* AIListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListTableViewDataSource.h; sourceTree = "<group>"; };
+		1F94D2C4193567CB000219C9 /* AIListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIListTableViewDataSource.m; sourceTree = "<group>"; };
+		1F94D2C619357C98000219C9 /* AIListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListTableViewCell.h; sourceTree = "<group>"; };
+		1F94D2C719357C98000219C9 /* AIListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,12 @@
 			children = (
 				1F94D2A0193563CD000219C9 /* AIAppDelegate.h */,
 				1F94D2A1193563CD000219C9 /* AIAppDelegate.m */,
+				1F94D2C0193563FA000219C9 /* AIListViewController.h */,
+				1F94D2C1193563FA000219C9 /* AIListViewController.m */,
+				1F94D2C3193567CB000219C9 /* AIListTableViewDataSource.h */,
+				1F94D2C4193567CB000219C9 /* AIListTableViewDataSource.m */,
+				1F94D2C619357C98000219C9 /* AIListTableViewCell.h */,
+				1F94D2C719357C98000219C9 /* AIListTableViewCell.m */,
 				1F94D2A3193563CD000219C9 /* Images.xcassets */,
 				1F94D298193563CD000219C9 /* Supporting Files */,
 			);
@@ -241,6 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F94D2A2193563CD000219C9 /* AIAppDelegate.m in Sources */,
+				1F94D2C2193563FA000219C9 /* AIListViewController.m in Sources */,
+				1F94D2C5193567CB000219C9 /* AIListTableViewDataSource.m in Sources */,
+				1F94D2C819357C98000219C9 /* AIListTableViewCell.m in Sources */,
 				1F94D29E193563CD000219C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

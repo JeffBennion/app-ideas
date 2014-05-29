@@ -7,6 +7,8 @@
 //
 
 #import "AIAppDelegate.h"
+#import "AIListViewController.h"
+
 
 @implementation AIAppDelegate
 
@@ -15,6 +17,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    AIListViewController *listViewController = [AIListViewController new];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    navigationController.navigationBar.translucent = NO;
+    self.window.rootViewController = navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
