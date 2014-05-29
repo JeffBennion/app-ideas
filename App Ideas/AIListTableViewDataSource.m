@@ -10,6 +10,8 @@
 #import "AIListTableViewCell.h"
 
 static NSString * const ListCellKey = @"listCell";
+static NSString * const PersistentListKey = @"persistentList";
+static NSString * const titleKey = @"title";
 
 @interface AIListTableViewDataSource () <UITextFieldDelegate>
 
@@ -19,6 +21,26 @@ static NSString * const ListCellKey = @"listCell";
 @end
 
 @implementation AIListTableViewDataSource
+
+// Lesson 5 Stuff
+- (id)init {
+    self = [super init];
+    
+    self.ideas = [[NSUserDefaults standardUserDefaults] objectForKey:PersistentListKey];
+    
+    return self;
+}
+
+- (void)setIdeas:(NSArray *)ideas{
+    _ideas = ideas;
+    
+    [[NSUserDefaults standardUserDefaults] setObject:ideas forKey:PersistentListKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+
+
 
 - (void)registerTableView:(UITableView *)tableView {
     self.tableView = tableView;
@@ -51,6 +73,9 @@ static NSString * const ListCellKey = @"listCell";
 - (void)textFieldDidEndEditing:(UITextField *)textField {
 
     NSInteger index = textField.tag;
+    
+//    NSMutableDictionary *idea = [[NSMutableDictionary alloc] initWithDictionary:self.ideas[index]];
+//    [idea setObject:textField.text forKey:titleKey];
     
     NSMutableArray *mutableIdeas = [NSMutableArray arrayWithArray:self.ideas];
     [mutableIdeas replaceObjectAtIndex:index withObject:textField.text];

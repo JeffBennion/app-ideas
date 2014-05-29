@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B2645646-77BA-495E-A016-DCB842A0357F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>App Ideas</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>320B0766-6BA7-4373-BD3E-7EA73CB28111</key>
+		<string>https://github.com/JeffBennion/app-ideas.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>App Ideas.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>320B0766-6BA7-4373-BD3E-7EA73CB28111</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JeffBennion/app-ideas.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>320B0766-6BA7-4373-BD3E-7EA73CB28111</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>320B0766-6BA7-4373-BD3E-7EA73CB28111</string>
+			<key>IDESourceControlWCCName</key>
+			<string>app-ideas</string>
+		</dict>
+	</array>
+</dict>
+</plist>

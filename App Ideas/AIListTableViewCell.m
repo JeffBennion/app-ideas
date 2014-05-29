@@ -9,6 +9,7 @@
 #import "AIListTableViewCell.h"
 
 static CGFloat margin = 15;
+static NSString * const titleKey = @"title";
 
 @interface AIListTableViewCell ()
 

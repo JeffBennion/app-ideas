@@ -8,8 +8,9 @@
 
 #import "AIListViewController.h"
 #import "AIListTableViewDataSource.h"
+#import "AIDetailViewController.h"
 
-@interface AIListViewController ()
+@interface AIListViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) AIListTableViewDataSource *dataSource;
@@ -41,6 +42,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.dataSource registerTableView:tableView];
     tableView.dataSource = self.dataSource;
+    tableView.delegate = self;
     
     [self.view addSubview:tableView];
     self.tableView = tableView;
@@ -54,6 +56,16 @@
 - (void)newIdea {
     [self.dataSource newIdea];
     [self.tableView reloadData];
+}
+
+//Lesson 5 stuff
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    AIDetailViewController *detailController = [AIDetailViewController new];
+    detailController.appIndex = indexPath.row;
+   // [detailController updateWithIdea:[self.dataSource ideas][indexPath.row]];
+    [self.navigationController pushViewController:detailController animated:YES];
 }
 
 @end
